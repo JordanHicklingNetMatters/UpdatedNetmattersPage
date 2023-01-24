@@ -75,8 +75,17 @@
     .smaller-cards {
         display: flex;
     }
+    .footer-content-row {
+        display: flex;
+    }
+    .first-two-services {
+        width: 70%;
+    }
 }
 
-@media (max-width: 1260px) {
-    
+@media (max-width: 1259px) {
+    .first-two-services {
+        justify-content: space-evenly;
+        width: 100%;
+    }
 }
