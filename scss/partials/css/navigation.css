@@ -1,0 +1,167 @@
+.main-nav {
+  background-color: #333645;
+}
+.main-nav span {
+  padding-bottom: 10px;
+  font-size: 18px;
+}
+.main-nav small {
+  font-size: 0.625rem;
+}
+
+.navigation-items {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  text-transform: uppercase;
+  text-align: center;
+}
+.navigation-items li {
+  width: 100%;
+}
+
+li a {
+  display: block;
+  color: #fff;
+  padding: 19px 0 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.sub-navigation {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-transform: capitalize;
+}
+.sub-navigation h1 {
+  color: #fff;
+  margin: 0;
+  font-weight: 300;
+  text-align: left;
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.sub-navigation .sub-nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  font-weight: 400;
+  font-size: 18px;
+  list-style: none;
+}
+.sub-navigation .new-sub-nav-item {
+  width: 33%;
+  margin-bottom: 20px;
+}
+.sub-navigation .nav-text {
+  margin-left: 10px;
+}
+
+.software:hover, .first {
+  background-color: #67809f;
+}
+.software:hover .app, .first .app {
+  color: #fff;
+}
+.software:hover .sub-navigation, .first .sub-navigation {
+  display: block;
+  background-color: #526781;
+}
+
+.support:hover, .second {
+  background-color: #20caf5;
+}
+.support:hover .monitor, .second .monitor {
+  color: #fff;
+}
+.support:hover .sub-navigation, .second .sub-navigation {
+  display: block;
+  background-color: #286abd;
+}
+
+.marketing:hover, .third {
+  background-color: #2ecc71;
+}
+.marketing:hover .bars, .third .bars {
+  color: #fff;
+}
+.marketing:hover .sub-navigation, .third .sub-navigation {
+  display: block;
+  background-color: #25a25a;
+}
+
+.telecoms:hover, .fourth {
+  background-color: #d64541;
+}
+.telecoms:hover .phone, .fourth .phone {
+  color: #fff;
+}
+.telecoms:hover .sub-navigation, .fourth .sub-navigation {
+  display: block;
+  background-color: #bc2c28;
+}
+
+.web-design:hover, .five {
+  background-color: #926fb1;
+}
+.web-design:hover .code, .five .code {
+  color: #fff;
+}
+.web-design:hover .sub-navigation, .five .sub-navigation {
+  display: block;
+  background-color: #79539a;
+}
+
+.cyber-security:hover, .six {
+  background-color: #f62459;
+}
+.cyber-security:hover .shield, .six .shield {
+  color: #fff;
+}
+.cyber-security:hover .sub-navigation, .six .sub-navigation {
+  display: block;
+  background-color: #de093f;
+}
+
+.developer-course:hover, .seventh {
+  background-color: orange;
+}
+.developer-course:hover .hat, .seventh .hat {
+  color: #fff;
+}
+.developer-course:hover .sub-navigation, .seventh .sub-navigation {
+  display: block;
+  background-color: #a3331d;
+}
+
+.app {
+  color: #67809f;
+}
+
+.monitor {
+  color: #4183d7;
+}
+
+.bars {
+  color: #2ecc71;
+}
+
+.phone {
+  color: #d64541;
+}
+
+.code {
+  color: #926fb1;
+}
+
+.shield {
+  color: #f62459;
+}
+
+.hat {
+  color: #ce4125;
+}/*# sourceMappingURL=navigation.css.map */

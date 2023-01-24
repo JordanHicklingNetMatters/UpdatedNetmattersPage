@@ -1,0 +1,151 @@
+@import "../utilities/mixins.scss",
+        "../utilities/vairable.scss";
+
+header .outter-ring {
+    padding: 20px 0;
+}
+
+.main-logo {
+    max-width: 35%;
+}
+
+.header-content {
+    float: right;
+    padding: 7px 0;
+    display: flex;
+    gap: 15px;
+}
+
+.contact {
+    color: #333645;
+    text-decoration: none; // The underline gets screwed up a bit here! TODO: Fix it when can PRIOTY: Low.
+    font-size: 25px;
+    margin-top: 15px;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+
+// TODO: Create a mixin for these buttons on the width and height! 
+
+.support-btn {
+    display: none;
+    height: 56px;
+	width: 150px;
+    border-color: #4183d7;
+    background-color: #4183d7;
+    color: $white;
+    font-size: 15px;
+    letter-spacing: 2px;
+    border: 0;
+    &:hover {
+        filter: brightness(0.85);
+        cursor: pointer;
+    }
+    a {
+        color: $white;
+        text-decoration: none;
+        padding-left: 2px;
+    }
+}
+
+.contact-btn {
+    height: 56px;
+	width: 150px;
+    border-color:   #9b9d9e;
+    background-color: #9b9d9e;
+    color: $white;
+    font-size: 15px;
+    letter-spacing: 2px;
+    border: 0;
+    a {
+        color: $white;
+        text-decoration: none;
+        padding-left: 2px;
+    }
+}
+.contact-btn:hover {
+    filter: brightness(0.85);
+    cursor: pointer;
+}
+
+.top-smaller-search-bar {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+}
+
+.small-search-bar {
+    height: 56px;
+    background-color: $white;
+    color: #7a7a7a;
+    font-size: 15px;
+    padding-left: 10px;
+    float: left;
+    border: 1px solid #999aa2;
+}
+
+.main-search-btn { //This is the search btn that appears without the search form.
+    height: 56px;
+    width: 60px;
+    font-size: 24px;
+    background-color: #999aa2;
+    border: none;
+    border-radius: 2px;
+    color: $white;
+    &:hover {
+        cursor: pointer;
+        background-color: #7F8088;
+    }
+  }
+
+
+
+
+
+  .hamburger-btn { // The hamburger button for the header.
+    height: 56px;
+    width: 60px;
+    border-radius: 5px;
+    font-size: 28px;
+    background-color: #333645;
+    border-color: #333645;
+    color: $white;
+    border: 0;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.lower-search-bar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    gap: 0px;
+}
+
+.search-bar {
+    height: 40px;
+    margin-bottom: 10px;
+    background-color: #e3e3e3;
+    color: #7a7a7a;
+    font-size: 15px;
+    border: none;
+    padding-left: 10px;
+    float: left;
+}
+
+.search-btn { // The search button for the form. 
+    @include btn;
+    float: left;
+    border-radius: 0;
+    height: 40px;
+    font-size: 18px;
+    background-color: #e3e3e3;
+    color: #333645;
+    &:hover {
+        cursor: pointer;
+    }
+}

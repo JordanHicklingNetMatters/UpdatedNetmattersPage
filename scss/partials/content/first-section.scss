@@ -1,0 +1,249 @@
+@import "../utilities/mixins.scss",
+        "../utilities/vairable.scss";
+
+.first-section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.service-list {
+    margin-top: 20px;
+}
+
+#service {
+    font-size: 2.7rem;
+    color: #333645;
+    font-weight: 600;
+}
+
+.all-cards {
+    font-weight: 300;
+    h2 {
+        font-weight: 300;
+        font-size: 1.3rem;
+        padding-bottom: 10px;
+        margin: 0 0 11px;
+        color: black;
+    }
+}
+
+.first-three-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.smaller-cards { 
+    gap: 20px;
+    display: flex;
+    direction: row;
+    margin-top: 15px;
+}
+
+.card {
+    @include service-cards;
+    width: 100%;
+}
+
+.card a {
+    text-decoration: none;
+    color: grey;
+}
+
+.wide-cards {
+    @include service-cards;
+    width: 100%;
+    a {
+        text-decoration: none;
+        color: grey;
+    }
+}
+
+.wide-cards:hover {
+    cursor: pointer;
+}
+
+.smaller-cards:hover {
+    cursor: pointer;
+}
+
+// link on card
+
+
+// TODO: MAKE TEXT A BIT SMALLER ON HEADER
+
+// TODO: MAKE BACKGROUND ON SPAN WHITE
+
+// TODO: MAKE BTN ALSO CHANGE.
+
+
+
+.first-card:hover {
+    background-color: #67809f;
+    color: $white;
+    margin-bottom: 5px;
+    transform: translateY(-10px);
+    transition-duration: 0.5s;
+    .card-content {
+        color: $white;
+    }
+}
+
+.second-card:hover {
+    background-color: #4183d7;
+    color: $white;
+    transform: translateY(-10px);
+    transition-duration: 0.5s;
+    .card-content {
+        color: $white;
+    }
+    span .btn {
+        background-color: $white;
+        color: #4183d7
+    }
+}
+
+.third-card:hover {
+    background-color: #2ecc71;
+    color: $white;
+    transform: translateY(-10px);
+    transition-duration: 0.5s;
+    .card-content {
+        color: $white;
+    }
+}
+
+.fourth-card:hover {
+    background-color: #d64541;
+    color: $white;
+    transform: translateY(-10px);
+    transition-duration: 0.5s;
+    .card-content {
+        color: $white;
+    }
+}
+
+.fifth-card:hover {
+    background-color: #926fb1;
+    color: $white;
+    transform: translateY(-10px);
+    transition-duration: 0.5s;
+    .card-content {
+        color: $white;
+    }
+}
+
+.sixth-card:hover {
+    background-color: #f62459;;
+    color: $white;
+    transform: translateY(-10px);
+    transition-duration: 0.5s;  
+    .card-content {
+        color: $white;
+    }
+}
+
+.seventh-card:hover {
+    background-color: #ce4125;
+    color: $white;
+    transform: translateY(-10px);
+    transition-duration: 0.5s;
+    .card-content {
+        color: $white;
+    }
+}
+// CARD ICON COLOR
+
+.card span {
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    margin: 0 auto 17px;
+    color: $white;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 62px;
+}
+
+.card-app {
+    background-color: #67809f;
+}
+
+.card-monitor {
+    background-color: #4183d7;
+}
+
+.card-bars {
+    background-color: #2ecc71;
+}
+
+.card-phone {
+    background-color: #d64541;
+}  
+
+.card-code {
+    background-color: #926fb1;
+}
+
+.card-shield {
+    background-color: #f62459;
+}
+
+.card-hat {
+    background-color: #ce4125;
+}
+
+// Buttons
+
+.btn {
+    @include btn;
+}
+
+.app-read-more {
+    background-color: $app-color;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.monitor-read-more {
+    background-color: $monitor-color;   
+    &:hover {
+        cursor: pointer;
+    } 
+}
+
+.bars-read-more {
+    background-color: $bars-color;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.phone-read-more {
+    background-color: $phone-color;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.code-read-more {
+    background-color: $code-color;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.shield-read-more {
+    background-color: $shield-color;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.hat-read-more {
+    background-color: $hat-color;
+    &:hover {
+        cursor: pointer;
+    }
+}
