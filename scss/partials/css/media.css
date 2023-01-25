@@ -8,6 +8,17 @@
   .lower-search-bar {
     display: none !important;
   }
+  .smaller-cards {
+    flex-wrap: wrap;
+    flex-direction: row !important;
+    justify-content: space-between;
+  }
+  .small {
+    width: 48% !important;
+  }
+  #s-br {
+    display: none;
+  }
 }
 @media (max-width: 767px) {
   .main-search-btn {
@@ -24,8 +35,12 @@
   .small-search-bar {
     display: none !important;
   }
+  .first-three-cards {
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+  }
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .contact-btn {
     display: none !important;
   }
@@ -45,13 +60,13 @@
   .card {
     width: 100%;
   }
-  .smaller-cards {
-    flex-direction: column;
-  }
 }
 @media (min-width: 1260px) {
   .container {
     width: 1200px;
+  }
+  .small-search-bar {
+    display: inline !important;
   }
   .wide-cards {
     width: 33.33%;
@@ -64,6 +79,9 @@
   }
   .first-two-services {
     width: 70%;
+  }
+  .smaller-cards {
+    flex-wrap: nowrap !important;
   }
 }
 @media (max-width: 1259px) {

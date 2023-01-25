@@ -26,14 +26,15 @@
 
 .first-three-cards {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
 .smaller-cards {
-  gap: 20px;
   display: flex;
-  direction: row;
+  gap: 20px;
+  flex-direction: column;
   margin-top: 15px;
 }
 
@@ -44,6 +45,9 @@
   padding: 30px;
   border-radius: 15px;
   width: 100%;
+}
+.card h2 {
+  color: #333645;
 }
 
 .card a {

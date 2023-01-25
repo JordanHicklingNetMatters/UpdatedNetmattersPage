@@ -36,6 +36,7 @@ footer {
 }
 
 
+// BOTTOM OF THE FOOTER
 
 .line {
     border: 0.5px solid $white;
@@ -44,11 +45,16 @@ footer {
 
 .bottom {
     color: $white;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
     .licence {
         display: flex;
         font-size: 13px;
-        margin-left: 30px;
+        span {
+            margin-left: 13px;
+            margin-right: 13px;
+        }
     }
     a {
         color: $white;
@@ -56,18 +62,35 @@ footer {
     }
     a:hover {
         cursor: pointer;
+        text-decoration: underline;
     }
     ul {
         list-style-type: none;
-        margin-top: -2px;
+        margin-top: 0;
     }
 }
 
 .social {
-    margin-left: 30px;
-    span {
-        justify-content: space-between;
+    display: flex;
+    .footer-icon {
+        padding: 10px;
         color: $white;
-        background-color: #333645;
+        max-height: 38px;
+    }
+    .fa-facebook-f:hover {
+        background-color: #3b5998;
+        border-radius: 50%;
+    }
+    .fa-twitter:hover {
+        background-color: #00acee;
+        border-radius: 50%;
+    }
+    .fa-instagram:hover {
+        background-color: #962fbf;
+        border-radius: 50%;
+    }
+    .fa-linkedin:hover {
+        background-color: #0A66C2;
+        border-radius: 50%;
     }
 }

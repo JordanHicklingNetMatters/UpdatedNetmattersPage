@@ -1,9 +1,11 @@
 @mixin service-cards {
+    border: 1px solid #ccc;
     font-family: sans-serif;
     text-align: center;
     border: 1px solid #ccc;
     padding: 30px;  
     border-radius: 15px;
+    box-shadow: 0 3px 35px rgb(0 0 0 / 10%);
 }
 
 @mixin hover-effect-service-card {
