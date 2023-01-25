@@ -1,0 +1,25 @@
+.sponsers {
+    .inner-sponser {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+.owl-carousel, .owl-stage {
+    display: flex;
+}
+
+.owl-item {
+    height: 100px;
+    object-fit: contain;
+}
+
+.greyscale {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+.greyscale:hover {
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+}
