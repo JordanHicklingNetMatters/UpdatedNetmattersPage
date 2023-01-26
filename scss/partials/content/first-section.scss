@@ -76,10 +76,6 @@
 
 // TODO: MAKE TEXT A BIT SMALLER ON HEADER
 
-// TODO: MAKE BACKGROUND ON SPAN WHITE
-
-// TODO: MAKE BTN ALSO CHANGE.
-
 
 
 .first-card:hover {
@@ -91,6 +87,13 @@
     .card-content {
         color: $white;
     }
+    span, .btn {
+        background-color: white;
+        color: #67809f;
+    }
+    h2 {
+        color: white;
+    }
 }
 
 .second-card:hover {
@@ -101,9 +104,12 @@
     .card-content {
         color: $white;
     }
-    span .btn {
+    span, .btn {
         background-color: $white;
-        color: #4183d7
+        color: #4183d7;
+    }
+    h2 {
+        color: $white;
     }
 }
 
@@ -113,6 +119,13 @@
     transform: translateY(-10px);
     transition-duration: 0.5s;
     .card-content {
+        color: $white;
+    }
+    span, .btn {
+        background-color: $white;
+        color: #2ecc71;
+    }
+    h2 {
         color: $white;
     }
 }
@@ -125,6 +138,13 @@
     .card-content {
         color: $white;
     }
+    span, .btn {
+        background-color: $white;
+        color: #d64541;
+    }
+    h2 {
+        color: $white;
+    }
 }
 
 .fifth-card:hover {
@@ -133,6 +153,13 @@
     transform: translateY(-10px);
     transition-duration: 0.5s;
     .card-content {
+        color: $white;
+    }
+    span, .btn {
+        background-color: $white;
+        color: #926fb1;
+    }
+    h2 {
         color: $white;
     }
 }
@@ -145,6 +172,13 @@
     .card-content {
         color: $white;
     }
+    span, .btn {
+        background-color: $white;
+        color: #f62459;
+    }
+    h2 {
+        color: $white;
+    }
 }
 
 .seventh-card:hover {
@@ -153,6 +187,13 @@
     transform: translateY(-10px);
     transition-duration: 0.5s;
     .card-content {
+        color: $white;
+    }
+    span, .btn {
+        background-color: $white;
+        color: #ce4125;
+    }
+    h2 {
         color: $white;
     }
 }
