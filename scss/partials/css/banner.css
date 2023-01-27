@@ -16,19 +16,21 @@
   font-weight: 600;
 }
 
-.banner-image {
-  width: 100%;
+.owl-one {
   height: 55vh;
-  -o-object-fit: cover;
-     object-fit: cover;
+  width: 100%;
+  margin-right: 0;
 }
-
 .owl-one .owl-item {
   height: 55vh;
-  width: 100vh;
-  margin-right: 0;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .owl-one .owl-dots {
   height: 40px;
   width: 40px;
+}
+.owl-one .owl-nav {
+  display: block;
 }/*# sourceMappingURL=banner.css.map */

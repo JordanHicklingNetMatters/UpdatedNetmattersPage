@@ -2,8 +2,10 @@ $(document).ready(function(){
     $('.owl-one').owlCarousel({
         loop:true,
         items: 1,
-        nav:true,
+        nav:false,
         singleItem: true,
+        margin:0,
+        dots:false,
         // autoHeight:true,
     });
 })
