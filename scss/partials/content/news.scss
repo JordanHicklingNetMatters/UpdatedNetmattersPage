@@ -1,20 +1,64 @@
 @import "../utilities/mixins.scss",
         "../utilities/vairable.scss";
 
-.news-row {
-    display: flex;
-    gap: 2%;
+.header-container {
     width: 100%;
 }
 
+.news-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+    width: 100%;
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+
 .article {
-    width: 50%;
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
     border: 1px solid gray;
-    box-shadow: 0 3px 35px rgb(0 0 0 / 10%);
+    // box-shadow: 0 3px 35px rgb(0 0 0 / 10%);
+    box-shadow: 0 8px 10px rgb(0 0 0 / 10%); // Box shadow that I prefer as it looks nicer on the page. The top one is one that is used on the site.
+    transition-duration: 0.5s;
+    h3 {
+        font-size: 16px;
+    }
+}
+
+.news-card-link {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.hidden {
+    display: none;
 }
 
 .main-article-img {
     width: 100%;
+}
+
+.img-banner-text {
+    position: absolute;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $white;
+    z-index: 1;
+    font-size: 11px;
+    background-color: #333645;
+    padding: 5px;
+    top: 15px;
+    right: 0;
+    font-weight: 400;
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 .news-content {
@@ -26,8 +70,11 @@
 }
 
 .news-read-more-btn {
-    @include news-button;
+    @include btn;
+    margin-top: 20px;
+    margin-bottom: 20px;
     background-color: #00b67b;
+    font-weight: 400;
     &:hover {
         cursor: pointer;
     }
@@ -43,12 +90,67 @@
     display: flex;
     flex-wrap: wrap;
     border-top: 1px solid lightgray;
-    padding: 20px; 
+    padding-top: 30px; 
     gap: 4%;  
+    font-size: 14px;
  }
 
 .avatar-img {
     border-radius: 50%;
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
+}
+
+.posted-strong {
+    line-height: 20px;
+    color: #333645;
+    font-weight: 600;
+}
+
+.careers {
+    h3  {
+        color: #d64541;
+    }
+    .news-read-more-btn, .img-banner-text {
+        background-color: #d64541; 
+    }
+}
+
+.insights {
+    h3 {
+        color: #2ecc71;
+    }
+    .news-read-more-btn, .img-banner-text {
+        background-color: #2ecc71;
+    }
+}
+
+.view-link-header {
+    float: right;
+    font-size: 32px;
+    color: #333645;
+    font-weight: 400;
+    a {
+    text-decoration: none;
+    color: #333645;
+    }
+    &:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+    } 
+}
+
+.view-all-section {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+    .view-link, .arrow {
+        text-decoration: none;
+        color: #333645;
+    }
+    .view-link:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+    }
 }

@@ -23,6 +23,12 @@
     #s-br {
         display: none;
     }
+    .news-row {
+        flex-wrap: nowrap !important;
+    }
+    .view-all-section {
+        display: none;
+    }
 }
 
 
@@ -31,6 +37,9 @@
         display: none !important;
     }
     .small-search-bar {
+        display: none !important;
+    }
+    .view-link-header {
         display: none !important;
     }
 }
@@ -100,6 +109,9 @@
     }
     .smaller-cards { 
         flex-wrap: nowrap !important;
+    }
+    .hidden {
+        display: inline;
     }
 }
 
