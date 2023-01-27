@@ -63,6 +63,9 @@
         flex-direction: row !important;
         flex-wrap: nowrap !important;
     }
+    #banner { 
+        margin-top: -16px;
+    }
 }
 
 @media (max-width: 991px) {

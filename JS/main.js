@@ -2,9 +2,9 @@ $(document).ready(function(){
     $('.owl-one').owlCarousel({
         loop:true,
         items: 1,
-        nav:false,
+        nav:true,
         singleItem: true,
-        autoHeight:true,
+        // autoHeight:true,
     });
 })
 
