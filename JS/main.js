@@ -1,22 +1,32 @@
 $(document).ready(function(){
-    $(".owl-carousel").owlCarousel();
-  });
+    $('.owl-one').owlCarousel({
+        loop:true,
+        items: 1,
+        nav:false,
+        singleItem: true,
+        autoHeight:true,
+    });
+})
 
-  $('.owl-carousel').owlCarousel({
-    loop:true,
-    autoplay:true,
-    margin:50,
-    nav:true,
-    dots:false,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:8
+
+
+$(document).ready(function(){
+    $('.owl-two').owlCarousel({
+        loop:true,
+        autoplay:true,
+        margin:50,
+        nav:true,
+        dots:false,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:8
+            }
         }
-    }
+    })
 })

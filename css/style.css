@@ -302,6 +302,33 @@ header .outter-ring {
   text-decoration-thickness: 1px;
 }
 
+.second-sponser {
+  display: none;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.second-sponser .sponser-image-container {
+  display: flex;
+  justify-content: space-between;
+}
+.second-sponser .inner-image {
+  padding: 0 20px;
+}
+.second-sponser img {
+  max-width: 100%;
+  height: auto;
+}
+.second-sponser .greyscale:hover {
+  cursor: pointer;
+}
+
+.sponser-description {
+  display: none;
+}
+.sponser-description:hover {
+  display: block;
+}
+
 .main-nav {
   background-color: #333645;
 }
@@ -500,6 +527,9 @@ li a {
   .view-all-section {
     display: none;
   }
+  .second-sponser {
+    display: block;
+  }
 }
 @media (max-width: 767px) {
   .main-search-btn {
@@ -578,9 +608,6 @@ li a {
   }
 }
 #banner {
-  background-size: cover;
-  background-image: url(../img/metting.jpg);
-  overflow: hidden;
   height: 55vh;
   width: 100%;
   margin-top: -16px;
@@ -598,6 +625,17 @@ li a {
   font-size: 1.3rem;
   line-height: 1.75rem;
   font-weight: 600;
+}
+
+.banner-image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.owl-one .owl-item {
+  height: 100%;
 }
 
 .sponsers .inner-sponser {

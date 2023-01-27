@@ -25,6 +25,9 @@
   .view-all-section {
     display: none;
   }
+  .second-sponser {
+    display: block;
+  }
 }
 @media (max-width: 767px) {
   .main-search-btn {

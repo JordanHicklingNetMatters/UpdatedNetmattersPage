@@ -1,0 +1,26 @@
+.second-sponser {
+    display: none;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .sponser-image-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .inner-image {
+        padding: 0 20px;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    .greyscale:hover {
+        cursor: pointer;
+    }
+}
+
+.sponser-description {
+    display: none;
+    &:hover {
+        display: block;
+    }
+}

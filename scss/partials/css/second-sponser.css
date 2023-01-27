@@ -1,0 +1,26 @@
+.second-sponser {
+  display: none;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.second-sponser .sponser-image-container {
+  display: flex;
+  justify-content: space-between;
+}
+.second-sponser .inner-image {
+  padding: 0 20px;
+}
+.second-sponser img {
+  max-width: 100%;
+  height: auto;
+}
+.second-sponser .greyscale:hover {
+  cursor: pointer;
+}
+
+.sponser-description {
+  display: none;
+}
+.sponser-description:hover {
+  display: block;
+}/*# sourceMappingURL=second-sponser.css.map */
