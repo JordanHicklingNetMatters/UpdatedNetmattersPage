@@ -1,0 +1,149 @@
+.about-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-section {
+  background-color: #333645;
+  color: #fff;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  font-family: Verdana;
+}
+.about-section .about-container {
+  width: 100%;
+  padding-right: 15px;
+}
+.about-section .review-container {
+  width: 100%;
+  padding-left: 15px;
+}
+.about-section .h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  margin-top: 0;
+}
+.about-section .beginning-about {
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+}
+.about-section .beginning-about a {
+  text-decoration: none;
+  color: #fff;
+}
+.about-section .beginning-about p {
+  line-height: 28px;
+  font-size: 16px;
+}
+.about-section .beginning-about a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.about-section .about-continued p {
+  padding-top: 10px;
+  line-height: 28px;
+}
+.about-section .stars {
+  color: goldenrod;
+  font-size: 2.5rem;
+}
+.about-section .client-quote {
+  font-size: 21px;
+  line-height: 28px;
+  font-weight: 600;
+}
+.about-section .client-name {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: gray;
+  font-weight: 600;
+}
+.about-section .client-name a {
+  color: white;
+  text-decoration: none;
+}
+.about-section .client-name a:hover {
+  text-decoration: underline;
+}
+
+.review-btns {
+  margin-top: 30px;
+}
+
+.about-read-more .choose-btn {
+  height: 50px;
+  border: none;
+  color: #fff;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  border-color: #272936;
+  background-color: #272936;
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+.about-read-more .choose-btn em {
+  font-size: 20px;
+  font-weight: bold;
+}
+.about-read-more .culture-btn {
+  height: 50px;
+  border: none;
+  color: #fff;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  border-color: #272936;
+  background-color: #272936;
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+.about-read-more .culture-btn em {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.about-btn:hover {
+  cursor: pointer;
+}
+
+.google-btn {
+  height: 50px;
+  border: none;
+  color: #fff;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  font-size: 20px;
+  background-color: #4387f6;
+  margin-right: 15px;
+}
+.google-btn em {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.google-btn:hover {
+  cursor: pointer;
+}
+
+.trustpilot-btn {
+  height: 50px;
+  border: none;
+  color: #fff;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  font-size: 20px;
+  background-color: #00b67b;
+  margin-top: 10px;
+}
+.trustpilot-btn em {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.trustpilot-btn:hover {
+  cursor: pointer;
+}/*# sourceMappingURL=about.css.map */

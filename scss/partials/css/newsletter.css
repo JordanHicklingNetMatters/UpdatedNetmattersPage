@@ -1,0 +1,91 @@
+.newsletter {
+  background-color: #ddd;
+  padding-bottom: 40px;
+}
+.newsletter .newsletter-form a {
+  text-decoration: underline;
+  color: #333645;
+}
+.newsletter .h2-newsletter {
+  color: #333645;
+  font-size: 2rem;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  font-weight: 400;
+}
+.newsletter .information {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  border: 1px solid #e5e5e5;
+  padding: 10px;
+  border-color: #ccc;
+  color: #555;
+  font-size: 15px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.newsletter .information:focus {
+  border-color: #33ccff;
+  outline: none;
+}
+.newsletter .information:after {
+  content: " *";
+  color: red;
+}
+.newsletter .display-information {
+  font-size: 18px;
+  color: #333645;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.newsletter input[type=checkbox] {
+  border: 3px solid #333645;
+  position: relative;
+  height: 32px;
+  width: 32px;
+  margin-right: 10px;
+  float: left;
+  accent-color: #333645;
+  color: white;
+  margin-left: 0;
+}
+.newsletter input[type=checkbox]:hover {
+  cursor: pointer;
+}
+.newsletter .accept-information {
+  font-size: 17px;
+  line-height: 30px;
+  color: #333645;
+  font-weight: bold;
+}
+
+.display-information:after {
+  content: " * ";
+  color: red;
+}
+
+.display-information-2:after {
+  content: " * ";
+  color: red;
+}
+
+.sub-btn {
+  line-height: 35px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-size: 15px;
+  border-radius: 3px;
+  border: none;
+  color: #fff;
+  background-color: #333645;
+  margin-top: 15px;
+  font-size: 17px;
+}
+.sub-btn:hover {
+  cursor: pointer;
+}
+
+.checkbox-container {
+  padding-right: 10px;
+}/*# sourceMappingURL=newsletter.css.map */

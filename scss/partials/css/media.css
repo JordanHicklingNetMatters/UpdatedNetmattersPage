@@ -54,6 +54,27 @@
   #banner {
     margin-top: -16px;
   }
+  .information-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .information-inner {
+    width: 48%;
+  }
+  .about-section {
+    display: flex;
+  }
+  .about-row {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .about-container {
+    width: 50%;
+  }
+  .review-container {
+    width: 50%;
+  }
 }
 @media (max-width: 991px) {
   .contact-btn {

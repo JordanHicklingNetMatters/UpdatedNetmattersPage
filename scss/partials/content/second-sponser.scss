@@ -1,3 +1,6 @@
+@import "../utilities/mixins.scss",
+        "../utilities/vairable.scss";
+
 .second-sponser {
     display: none;
     padding-top: 50px;
@@ -18,9 +21,37 @@
     }
 }
 
+.description-container {
+    padding: 20px;
+    background-color: #333645;
+    max-width: 260px;
+    color: white;
+}
+
 .sponser-description {
     display: none;
-    &:hover {
-        display: block;
-    }
+    position: absolute;
+    max-width: 260px;
 }
+
+// .busseys-sponser-description {
+//     @include sponser-description;
+// }
+
+// .crane-sponser-description {
+//     @include sponser-description;
+// }
+
+// .beat-sponser-description {
+//     @include sponser-description;
+// }
+
+// .driver-sponser-description {
+//     @include sponser-description;
+// }
+
+// .busseys:hover {
+//     .busseys-sponser-description {
+//         display: inline;
+//     }
+// }

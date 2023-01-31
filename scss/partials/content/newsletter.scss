@@ -1,0 +1,101 @@
+@import "../utilities/mixins.scss",
+        "../utilities/vairable.scss";
+
+.newsletter {
+    background-color: #ddd;
+    padding-bottom: 40px;
+    .newsletter-form  a {
+        text-decoration: underline;
+        color: #333645;
+    }
+    .h2-newsletter {
+        color: #333645;
+        font-size: 2rem;
+        padding-top: 40px;
+        padding-bottom: 10px;
+        font-weight: 400;
+    }
+    .information {
+        width: 100%;
+        height: 50px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        border: 1px solid #e5e5e5;
+        padding: 10px;
+        border-color: #ccc;
+        color: #555;
+        font-size: 15px;
+        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        &:focus {
+            border-color: #33ccff;
+            outline: none;
+        }
+        }
+    .information:after {
+        content: " *";
+        color: red;
+    }
+    .display-information {
+        font-size: 18px;
+        color: #333645;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    input[type='checkbox'] {
+        border: 3px solid #333645;
+        position: relative;
+        height: 32px;
+        width: 32px;
+        margin-right: 10px;
+        float: left;
+        accent-color: #333645;
+        color: white;
+        margin-left: 0;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    .accept-information {
+        font-size: 17px;
+        line-height: 30px;
+        color: #333645;
+        font-weight: bold;
+    }
+}
+
+.display-information:after {
+    content: " * ";
+    color: red;
+}
+
+.display-information-2:after {
+    content: " * ";
+    color: red;
+}
+
+.sub-btn {
+    @include btn;
+    background-color: #333645;
+    margin-top: 15px;
+    font-size: 17px;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.checkbox-container {
+    padding-right: 10px;
+}
+
+// .checkbox-btn {
+//     border: 3px solid #333645;
+//     position: relative;
+//     height: 32px;
+//     width: 32px;
+//     margin-right: 10px;
+//     float: left;
+//     accent-color: #333645;
+//     color: white;
+// }
+
+

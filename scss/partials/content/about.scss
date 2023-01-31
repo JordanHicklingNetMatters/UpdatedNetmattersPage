@@ -1,0 +1,158 @@
+@import "../utilities/mixins.scss",
+        "../utilities/vairable.scss";
+
+// This is the CSS code for the about section (Review included.)'
+
+.about-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.about-section {
+    background-color: #333645;
+    color: $white;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    font-family: Verdana;
+    .about-container {
+        width: 100%;
+        padding-right: 15px;
+    }
+    .review-container {
+        width: 100%;
+        padding-left: 15px;
+    }
+    .h2 {
+        font-size: 32px;
+        margin-bottom: 40px;
+        margin-top: 0;
+    }
+    .beginning-about {
+        color: $white;
+        font-weight: bold;
+        font-size: 15px;
+    a {
+        text-decoration: none;
+        color: $white;
+    }
+    p {
+        line-height: 28px;
+        font-size: 16px;
+    }
+    a:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    }
+    .about-continued p {
+        padding-top: 10px;
+        line-height: 28px;
+    }
+    .stars {
+        color: goldenrod;
+        font-size: 2.5rem;
+    }
+    .client-quote {
+        font-size: 21px;
+        line-height: 28px;
+        font-weight: 600;
+    }
+    .client-name {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: gray;
+        font-weight: 600;
+        a {
+            color: white;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.review-btns {
+    margin-top: 30px;
+}
+
+.about-read-more {
+    .choose-btn {
+        height: 50px;
+        border: none;
+        color: #fff;
+        padding: 5px 15px;
+        text-transform: uppercase;
+        border-radius: 6px;
+        border-color: #272936;
+        background-color: #272936;
+        margin-bottom: 50px;
+        font-size: 20px;
+        em {
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
+    .culture-btn {
+        height: 50px;
+        border: none;
+        color: #fff;
+        padding: 5px 15px;
+        text-transform: uppercase;
+        border-radius: 6px;
+        border-color: #272936;
+        background-color: #272936;
+        margin-bottom: 50px;
+        font-size: 20px;
+        em {
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
+}
+
+
+.about-btn:hover {
+    cursor: pointer;
+}
+
+ .google-btn {
+    height: 50px;
+    border: none;
+    color: #fff;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    font-size: 20px;
+    background-color: #4387f6;
+    margin-right: 15px;
+    em {
+        font-size: 14px;
+        font-weight: bold;
+    }
+}
+
+.google-btn:hover {
+    cursor: pointer;
+}
+
+.trustpilot-btn {
+    height: 50px;
+    border: none;
+    color: #fff;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    font-size: 20px;
+    background-color: #00b67b;
+    margin-top: 10px;
+    em {
+        font-size: 14px;
+        font-weight: bold;
+    }
+ }
+
+ .trustpilot-btn:hover {
+    cursor: pointer;
+ }

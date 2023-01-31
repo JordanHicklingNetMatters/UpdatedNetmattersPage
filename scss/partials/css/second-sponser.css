@@ -18,9 +18,15 @@
   cursor: pointer;
 }
 
+.description-container {
+  padding: 20px;
+  background-color: #333645;
+  max-width: 260px;
+  color: white;
+}
+
 .sponser-description {
   display: none;
-}
-.sponser-description:hover {
-  display: block;
+  position: absolute;
+  max-width: 260px;
 }/*# sourceMappingURL=second-sponser.css.map */
