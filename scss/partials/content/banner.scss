@@ -1,9 +1,8 @@
 @import "../utilities/mixins.scss",
         "../utilities/vairable.scss";
 
+
 #banner {
-    // background-image: url(../img/metting.jpg);
-    // height: 55vh;
     position: relative;
     .h1 {
         color: $white;
@@ -31,11 +30,14 @@
     height: 55vh;
     width: 100%;
     margin-right: 0;
-    .owl-item {
+    background: linear-gradient(270deg,transparent 25%,#000);
+    img {
+        filter: brightness(80%);
+    }
+    .item {
         height: 55vh;
         width: 100%;
         object-fit: cover;
-
     }
     .owl-dots {
         height: 40px;
@@ -43,5 +45,62 @@
     }
     .owl-nav {
         display: block;
+    }
+    .text {
+        position: absolute;
+        top: 50px;
+        color: white;
+        width: 100%;
+    }
+    h1 {
+        font-size: 64px;
+        line-height: 80px;
+        margin-bottom: 0;
+    }
+    p {
+        font-size: 26px;
+        line-height: 40px;
+        top: 40px
+    }
+    .find-out-more {
+        height: 60px;
+        font-size: 20px;
+        &:hover {
+            cursor: pointer;
+            filter: brightness(85%);
+        }
+    }
+    .smaller-text {
+        position: absolute;
+        top: 90px;
+        color: white;
+        width: 100%;
+    }
+    .purple {
+        background-color: #926fb1;
+        border-color: #926fb1;
+    }
+    .gray {
+        background-color: #67809f;
+        border-color: #67809f;
+    }
+    .blue {
+        background-color: #4183d7;
+        border-color: #4183d7;
+    }
+    .green {
+        background-color: #2ecc71;
+        border-color: #2ecc71;
+    }
+    .red {
+        background-color: #d64541;
+        border-color: #d64541;
+    }
+    .cherry {
+        background-color: #f62459;
+        border-color: #f62459;
+    }
+    i {
+        padding-left: 10px;
     }
 }

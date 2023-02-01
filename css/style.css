@@ -337,6 +337,10 @@ header .outter-ring {
   max-width: 260px;
 }
 
+.busseys:hover .busseys-description-container {
+  display: block;
+}
+
 .newsletter {
   background-color: #ddd;
   padding-bottom: 40px;
@@ -678,7 +682,7 @@ li a {
   height: 50px;
   border: none;
   color: #fff;
-  padding: 5px 15px;
+  padding: 15px;
   text-transform: uppercase;
   border-radius: 6px;
   border-color: #272936;
@@ -694,7 +698,7 @@ li a {
   height: 50px;
   border: none;
   color: #fff;
-  padding: 5px 15px;
+  padding: 15px;
   text-transform: uppercase;
   border-radius: 6px;
   border-color: #272936;
@@ -715,16 +719,12 @@ li a {
   height: 50px;
   border: none;
   color: #fff;
-  padding: 5px 15px;
+  padding: 15px;
   text-transform: uppercase;
   border-radius: 6px;
   font-size: 20px;
   background-color: #4387f6;
   margin-right: 15px;
-}
-.google-btn em {
-  font-size: 14px;
-  font-weight: bold;
 }
 
 .google-btn:hover {
@@ -735,16 +735,12 @@ li a {
   height: 50px;
   border: none;
   color: #fff;
-  padding: 5px 15px;
+  padding: 15px;
   text-transform: uppercase;
   border-radius: 6px;
   font-size: 20px;
   background-color: #00b67b;
   margin-top: 10px;
-}
-.trustpilot-btn em {
-  font-size: 14px;
-  font-weight: bold;
 }
 
 .trustpilot-btn:hover {
@@ -839,6 +835,18 @@ li a {
   #banner {
     text-align: center;
   }
+  #banner h1 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  #banner .text, #banner .smaller-text {
+    top: 90px;
+  }
+  #banner p {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 40px;
+  }
   .main-nav {
     display: none;
   }
@@ -904,8 +912,12 @@ li a {
   height: 55vh;
   width: 100%;
   margin-right: 0;
+  background: linear-gradient(270deg, transparent 25%, #000);
 }
-.owl-one .owl-item {
+.owl-one img {
+  filter: brightness(80%);
+}
+.owl-one .item {
   height: 55vh;
   width: 100%;
   -o-object-fit: cover;
@@ -917,6 +929,63 @@ li a {
 }
 .owl-one .owl-nav {
   display: block;
+}
+.owl-one .text {
+  position: absolute;
+  top: 50px;
+  color: white;
+  width: 100%;
+}
+.owl-one h1 {
+  font-size: 64px;
+  line-height: 80px;
+  margin-bottom: 0;
+}
+.owl-one p {
+  font-size: 26px;
+  line-height: 40px;
+  top: 40px;
+}
+.owl-one .find-out-more {
+  height: 60px;
+  font-size: 20px;
+}
+.owl-one .find-out-more:hover {
+  cursor: pointer;
+  filter: brightness(85%);
+}
+.owl-one .smaller-text {
+  position: absolute;
+  top: 90px;
+  color: white;
+  width: 100%;
+}
+.owl-one .purple {
+  background-color: #926fb1;
+  border-color: #926fb1;
+}
+.owl-one .gray {
+  background-color: #67809f;
+  border-color: #67809f;
+}
+.owl-one .blue {
+  background-color: #4183d7;
+  border-color: #4183d7;
+}
+.owl-one .green {
+  background-color: #2ecc71;
+  border-color: #2ecc71;
+}
+.owl-one .red {
+  background-color: #d64541;
+  border-color: #d64541;
+}
+.owl-one .cherry {
+  background-color: #f62459;
+  border-color: #f62459;
+}
+.owl-one i {
+  padding-left: 10px;
 }
 
 .sponsers .inner-sponser {

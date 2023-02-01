@@ -34,6 +34,12 @@
     max-width: 260px;
 }
 
+.busseys:hover {
+    .busseys-description-container {
+        display: block;
+    }
+}
+
 // .busseys-sponser-description {
 //     @include sponser-description;
 // }

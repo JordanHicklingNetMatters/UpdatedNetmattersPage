@@ -1,6 +1,30 @@
+// const storageType = localStorage;
+// const consentPropertyName = 'nm_consent';
+
+// const shouldShowPopup = () => !storageType.getItem(consentPropertyName);
+// const saveToStorage = () => storageType.setItem(consentPropertyName, true);
+
+// window.onload = () => {
+//     if (shouldShowPopup()) {
+//         const consent = confirm('Agree to the terms and conditions of the site?');
+//         if (consent) {
+//             saveToStorage();
+//         }
+//     }
+// };
+
+
+
+
+
+
+
+// OWL CAROUSELS
+
 $(document).ready(function(){
     $('.owl-one').owlCarousel({
         loop:true,
+        autoplay:true,
         items: 1,
         nav:false,
         singleItem: true,

@@ -29,4 +29,8 @@
   display: none;
   position: absolute;
   max-width: 260px;
+}
+
+.busseys:hover .busseys-description-container {
+  display: block;
 }/*# sourceMappingURL=second-sponser.css.map */
