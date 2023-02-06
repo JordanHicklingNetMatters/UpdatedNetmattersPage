@@ -1,0 +1,15 @@
+.sticky {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 11;
+  transition: top 0.2s ease-in-out;
+}
+.sticky header {
+  background-color: white;
+}
+
+.hide {
+  top: -53px;
+}/*# sourceMappingURL=sticky-header.css.map */

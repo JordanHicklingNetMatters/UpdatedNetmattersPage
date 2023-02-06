@@ -80,6 +80,10 @@
   cursor: pointer;
 }
 
+.hide {
+  display: none;
+}
+
 .first-card:hover {
   background-color: #67809f;
   color: #fff;

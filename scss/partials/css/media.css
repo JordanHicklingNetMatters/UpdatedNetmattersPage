@@ -28,6 +28,9 @@
   .second-sponser {
     display: block;
   }
+  .main-logo {
+    max-width: 35%;
+  }
 }
 @media (max-width: 767px) {
   .main-search-btn {
@@ -38,6 +41,9 @@
   }
   .view-link-header {
     display: none !important;
+  }
+  .main-logo {
+    max-width: 50%;
   }
 }
 @media (min-width: 992px) {
@@ -50,9 +56,6 @@
   .first-three-cards {
     flex-direction: row !important;
     flex-wrap: nowrap !important;
-  }
-  #banner {
-    margin-top: -16px;
   }
   .information-flex {
     display: flex;
@@ -90,7 +93,7 @@
     font-size: 40px;
     line-height: 48px;
   }
-  #banner .text, #banner .smaller-text {
+  #banner .smaller-text {
     top: 90px;
   }
   #banner p {
@@ -131,8 +134,8 @@
   .smaller-cards {
     flex-wrap: nowrap !important;
   }
-  .hidden {
-    display: inline;
+  .hide {
+    display: inline !important;
   }
 }
 @media (max-width: 1259px) {

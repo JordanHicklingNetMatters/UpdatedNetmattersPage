@@ -1,0 +1,70 @@
+@import "../utilities/mixins.scss",
+        "../utilities/vairable.scss";
+
+#cookie-container {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.7);
+    position: fixed;
+    z-index: 99;
+    padding: 30px;
+    #consent-popup {
+        line-height: 30px;
+        border-radius: 6px;
+        margin-top: 250px;
+        margin-left: 40px;
+        margin-right: 40px;
+        width: auto;
+        opacity: 1;
+        background-color: white;
+        transition: opacity .8s ease;
+        .cookie-header {
+            padding: 15px 20px;
+            border-bottom: 1px #e5e5e5 solid;
+        }
+        h3 {
+            font-size: 26px;
+            color: #333645;
+            font-weight: 400;
+            margin: 0;
+        }
+        .cookie-content {
+            padding: 15px 20px;
+        }
+        a {
+            text-decoration: none;
+            color: #333645;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        .cookie-footer {
+            padding: 15px 20px;
+            border-top: 1px #e5e5e5 solid;
+            display: flex;
+            flex-direction: column;
+        }
+        #accept-cookies {
+            @include btn;
+            background-color: #926fb1;
+            font-size: 16px;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        #change-settings {
+            @include btn;
+            background-color: #999aa2;
+            margin-bottom: 30px;
+            font-size: 16px;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+    .hidden {
+        display: none;
+    }
+}

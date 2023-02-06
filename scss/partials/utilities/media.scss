@@ -32,6 +32,9 @@
     .second-sponser {
         display: block;
     }
+    .main-logo {
+        max-width: 35%;
+    }
 }
 
 
@@ -44,6 +47,9 @@
     }
     .view-link-header {
         display: none !important;
+    }
+    .main-logo {
+        max-width: 50%;
     }
 }
 
@@ -62,9 +68,6 @@
     .first-three-cards {
         flex-direction: row !important;
         flex-wrap: nowrap !important;
-    }
-    #banner { 
-        margin-top: -16px;
     }
     .information-flex {
         display: flex;
@@ -102,7 +105,7 @@
             font-size: 40px;
             line-height: 48px;
         }
-        .text, .smaller-text {
+        .smaller-text {
             top: 90px;
         }
         p {
@@ -149,8 +152,8 @@
     .smaller-cards { 
         flex-wrap: nowrap !important;
     }
-    .hidden {
-        display: inline;
+    .hide {
+        display: inline !important;
     }
 }
 

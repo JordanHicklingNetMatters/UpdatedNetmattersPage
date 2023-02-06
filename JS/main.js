@@ -1,23 +1,41 @@
-// const storageType = localStorage;
-// const consentPropertyName = 'nm_consent';
+// window.onscroll = function() {myFunction()};
 
-// const shouldShowPopup = () => !storageType.getItem(consentPropertyName);
-// const saveToStorage = () => storageType.setItem(consentPropertyName, true);
+// var header = document.getElementsByClassName("sticky");
+// var sticky = header.offsetTop;
 
-// window.onload = () => {
-//     if (shouldShowPopup()) {
-//         const consent = confirm('Agree to the terms and conditions of the site?');
-//         if (consent) {
-//             saveToStorage();
-//         }
+// function myFunction() {
+//     if (window.pageYOffset > sticky) {
+//       header.classList.add("sticky");
+//     } else {
+//       header.classList.remove("sticky");
 //     }
-// };
+//   }
+  
 
+// COOKIE POPUP
 
+const storageType = localStorage;
+const consentPropertyName = 'nm_consent';
 
+const shouldShowPopup = () => !storageType.getItem(consentPropertyName);
+const saveToStorage = () => storageType.setItem(consentPropertyName, true);
 
+window.onload = () => {
+    const consentPopup = document.getElementById('cookie-container');
+    const acceptBtn = document.getElementById('accept-cookies');
 
+    // added the function above to the accept button
+    acceptBtn.addEventListener('click', acceptFn);
+    // function for when the button is clicked
+    function acceptFn() {
+        saveToStorage();
+        consentPopup.classList.add('hidden');
+    }
 
+    if (storageType.getItem(consentPropertyName)) {
+        consentPopup.classList.add('hidden');
+    }
+};
 
 // OWL CAROUSELS
 
