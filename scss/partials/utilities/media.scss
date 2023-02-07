@@ -90,6 +90,9 @@
     .review-container {
         width: 50%;
     }    
+    .small-screen {
+        display: none !important;
+    }
 }
 
 @media (max-width: 991px) {
@@ -124,6 +127,9 @@
     .card {
         width: 100%;
     }
+    .big-screen {
+        display: none !important;
+    } // Hides the two buttons on the header on smaller screens.
 }
 
 //===============================================================================

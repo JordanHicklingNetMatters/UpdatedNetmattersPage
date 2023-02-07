@@ -1,16 +1,38 @@
-// window.onscroll = function() {myFunction()};
+const hamburgerBtn = document.getElementsByClassName('hamburger-btn');
+const sidebar = document.getElementsByClassName('sidebar');
+const main = document.getElementsByClassName('main');
 
-// var header = document.getElementsByClassName("sticky");
-// var sticky = header.offsetTop;
+hamburgerBtn[0].addEventListener('click', openSidebar);
+hamburgerBtn[1].addEventListener('click', openSidebar);
 
-// function myFunction() {
-//     if (window.pageYOffset > sticky) {
-//       header.classList.add("sticky");
-//     } else {
-//       header.classList.remove("sticky");
-//     }
-//   }
-  
+function openSidebar() {
+    sidebar[0].style.width = '30%';
+    // main[0].style.marginRight = '350px';
+}
+
+// body[0].addEventListener('click', bodyCloseSidebar)
+
+// function bodyCloseSidebar() {
+//     // sidebar[0].style.width = '0'
+// }
+
+// Sticky Header
+
+const stickyHeader = document.getElementById('sticky');
+var lastScrollTop = 0;
+
+window.addEventListener('scroll',(event) => {
+    var st = window.pageYOffset || document.documentElement.scrollTop;
+        if (st > lastScrollTop && document.documentElement.scrollTop < 299) {
+            stickyHeader.style.display = 'none';
+        } else if (st > lastScrollTop && document.documentElement.scrollTop > 300) {
+            stickyHeader.style.top = '-450px';
+        } else if (st < lastScrollTop && document.documentElement.scrollTop > 300) {
+            stickyHeader.style.top = '0';
+            stickyHeader.style.display = 'inline';
+        } 
+    lastScrollTop = st <= 0 ? 0 : st;
+}, false);
 
 // COOKIE POPUP
 
