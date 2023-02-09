@@ -82,6 +82,7 @@
   background-color: #272936;
   margin-bottom: 50px;
   font-size: 20px;
+  cursor: pointer;
 }
 .about-read-more .choose-btn em {
   font-size: 20px;
@@ -98,6 +99,7 @@
   background-color: #272936;
   margin-bottom: 50px;
   font-size: 20px;
+  cursor: pointer;
 }
 .about-read-more .culture-btn em {
   font-size: 20px;

@@ -1,25 +1,29 @@
 const hamburgerBtn = document.getElementsByClassName('hamburger-btn');
 const sidebar = document.getElementsByClassName('sidebar');
 const main = document.getElementsByClassName('main');
+const stickyHeader = document.getElementById('sticky');
+var lastScrollTop = 0;
 
 hamburgerBtn[0].addEventListener('click', openSidebar);
 hamburgerBtn[1].addEventListener('click', openSidebar);
 
-function openSidebar() {
-    sidebar[0].style.width = '30%';
-    // main[0].style.marginRight = '350px';
+function openSidebar(event) {
+    event.stopPropagation() // Needed to stop the HTML click
+    sidebar[0].style.width = '350px';
+    document.body.classList.add('is-dimmed');
+    document.getElementById("main").style.marginRight = '350px';
+    document.body.style.background = 'rgba(0,0,0,.5)';
 }
 
-// body[0].addEventListener('click', bodyCloseSidebar)
-
-// function bodyCloseSidebar() {
-//     // sidebar[0].style.width = '0'
-// }
+$('#main').click(function() {
+    //  Hide the sidebar
+    sidebar[0].style.width = '0';
+    document.body.classList.remove('is-dimmed');
+    document.getElementById("main").style.marginRight = '0';
+    document.body.style.background = 'rgba(0,0,0,0)';
+});
 
 // Sticky Header
-
-const stickyHeader = document.getElementById('sticky');
-var lastScrollTop = 0;
 
 window.addEventListener('scroll',(event) => {
     var st = window.pageYOffset || document.documentElement.scrollTop;

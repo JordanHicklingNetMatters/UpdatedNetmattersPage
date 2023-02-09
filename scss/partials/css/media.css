@@ -81,6 +81,27 @@
   .small-screen {
     display: none !important;
   }
+  .sidebar .sidebar-container {
+    padding: 0 !important;
+  }
+  .small-screen-content {
+    margin-top: 0;
+  }
+  .sidebar .small-screen-content .header-small-screen {
+    font-size: 16px;
+  }
+  .last-header {
+    display: none;
+  }
+  .last-big-screen-header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  }
+  .location-container {
+    width: 33% !important;
+  }
+  .location-flex {
+    flex-wrap: nowrap !important;
+  }
 }
 @media (max-width: 991px) {
   .contact-btn {

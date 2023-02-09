@@ -13,7 +13,8 @@
         "../scss/partials/utilities/vairable.scss",
         "../scss/partials/utilities/mixins.scss",
         "../scss/partials/content/cookie-popup.scss",
-        "../scss/partials/content/sticky-header.scss";
+        "../scss/partials/content/sticky-header.scss",
+        "../scss/partials/content/contact.scss";
 
 * {
     box-sizing: border-box;
@@ -50,6 +51,6 @@ body {
     font-weight: 400;
 }
 
-.main {
-    transition: left 1s ease-in-out;
+#main {
+    transition: margin-right .5s;
 }
