@@ -1,68 +1,86 @@
-<div class="news-row">
-        
-                <div class="careers article">
-                    <a href="#" class="news-card-link"></a>
-                    <a href="#" class="img-banner-text">Careers</a> 
-                    <img class="main-article-img" src="img/junior-digital-marketing.jpg" alt="A picture advertising a job for junior digital marketing executive.">
-                    <div class="news-content">
-                        <h3 class="h3-news">Junior Deigital Marketing Executive</h3>
-                        <p class="description">Salary Range £18,000 - £23,000, 40 hours per week, Mon-Fri Location
-                            Wymondham, Norfolk, Great...</p>
-                        <a href="#"><button class="news-read-more-btn" type="button">Read More</button></a>
-                        <div class="posted-by-section">
-                            <div>
-                                <img class="avatar-img" src="img/netmatters-avatar-logo.png" alt="An avatar of the user who posted the article.">
-                            </div>
-                            <div class="details">
-                                <strong class="posted-strong">Posted by Netmatters</strong>
-                                <br>
-                                20th July 2022
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="insights article">
-                    <a href="#" class="news-card-link"></a>
-                    <a href="#" class="img-banner-text">insights</a> 
-                    <img class="main-article-img" src="img/SEO.jpg" alt="A picture advertising a job for junior digital marketing executive.">
-                    <div class="news-content">
-                        <h3 class="h3-news">What You Don't Know About SEO</h3>
-                        <p class="description">Technology. Competitors. Search Engine Algorithms. These factors are all
-                            inevitably goint to be ever...</p>
-                        <a href="#"><button class="news-read-more-btn" type="button">Read More</button></a>
-                        <div class="posted-by-section">
-                            <div>
-                                <img class="avatar-img" src="img/netmatters-avatar-logo.png" alt="An avatar of the user who posted the article.">
-                            </div>
-                            <div class="details">
-                                <strong class="posted-strong">Posted by Netmatters</strong>
-                                <br>
-                                20th July 2022
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<?php
+    include_once 'dbh.php';
 
-                <div class="careers hide article">
-                    <a href="#" class="news-card-link"></a>
-                    <a href="#" class="img-banner-text">Careers</a> 
-                    <img class="main-article-img" src="img/new-business-executive.jpg" alt="A picture with a phone advertising jobs for new business exectuives">
-                    <div class="news-content">
-                        <h3 class="h3-news">New Business Executive</h3>
-                        <p class="description">Salary Range £22,000 & OTE Hours 40 hours per week, Monday - Friday
-                            Location Wymondham, Norfolk/Part...</p>
-                        <a href="#"><button class="news-read-more-btn" type="button">Read More</button></a>
-                        <div class="posted-by-section">
-                            <div>
-                                <img class="avatar-img" src="img/netmatters-avatar-logo.png" alt="An avatar of the user who posted the article.">
-                            </div>
-                            <div class="details">
-                                <strong class="posted-strong">Posted by Netmatters</strong>
-                                <br>
-                                20th July 2022
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    $sql = "SELECT * FROM news WHERE id=1;";
+    $result = $conn->query($sql);
+
+
+    echo '<div class="news-row">';
+        
+        if ($result->rowCount() > 0)  { //checks the results if its 0 then it can run the code (prevents errors)
+            while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
+                echo '<div class="careers article">';
+                    echo '<a href="#" class="news-card-link"></a>';
+                        echo '<a href="#" class="img-banner-text">Careers</a>';
+                            echo '<img class="main-article-img" src="'  . $row['imgsrc'] .  '" alt="A picture advertising a job for junior digital marketing executive.">';
+                    echo '<div class="news-content">';
+                        echo '<h3 class="h3-news">'    . $row['title'] .   '</h3>';
+                        echo '<p class="description">' . $row['description'] . '</p>';
+                        echo '<a href="#"><button class="news-read-more-btn" type="button">Read More</button></a>';
+                        echo '<div class="posted-by-section">';
+                            echo '<div>';
+                                echo '<img class="avatar-img" src="' . $row['authorsrc'] . '" alt="An avatar of the user who posted the article.">';
+                            echo '</div>';
+                            echo '<div class="details">';
+                                echo '<strong class="posted-strong">' . $row['author'] . '</strong><br>' . $row['dateposted'];
+                            echo '</div>';
+                        echo '</div>';
+                    echo '</div>';
+                echo '</div>';
+            }
+        }
+                
+        $secondSql = "SELECT * FROM news WHERE id=2;";
+        $secondResults = $conn->query($secondSql);
+
+        if ($secondResults->rowCount() > 0) { //checks the results if its 0 then it can run the code (prevents errors)
+            while ($row = $secondResults->fetch(PDO::FETCH_ASSOC)) {
+                echo '<div class="insights article">';
+                    echo '<a href="#" class="news-card-link"></a>';
+                    echo '<a href="#" class="img-banner-text">insights</a>';
+                    echo '<img class="main-article-img" src="'  . $row['imgsrc'] .  '" alt="Text stating What you dont know about seo">';
+                    echo '<div class="news-content">';
+                        echo '<h3 class="h3-news">'    . $row['title'] .   '</h3>';
+                        echo '<p class="description">' . $row['description'] . '</p>';
+                        echo '<a href="#"><button class="news-read-more-btn" type="button">Read More</button></a>';
+                        echo '<div class="posted-by-section">';
+                            echo '<div>';
+                                echo '<img class="avatar-img" src="' . $row['authorsrc'] . '" alt="An avatar of the user who posted the article.">';
+                            echo '</div>';
+                            echo '<div class="details">';
+                                echo '<strong class="posted-strong">' . $row['author'] . '</strong><br>' . $row['dateposted'];
+                            echo '</div>';
+                        echo '</div>';
+                    echo '</div>';
+                echo '</div>';
+            }
+        }
+
+        $thirdSql = "SELECT * FROM news WHERE id=3;";
+        $thirdResults = $conn->query($thirdSql);
+
+        if ($thirdResults->rowCount() > 0) { //checks the results if its 0 then it can run the code (prevents errors)
+            while ($row = $thirdResults->fetch(PDO::FETCH_ASSOC)) {
+                echo '<div class="careers hide article">';
+                    echo '<a href="#" class="news-card-link"></a>';
+                    echo '<a href="#" class="img-banner-text">Careers</a>';
+                    echo '<img class="main-article-img" src="' . $row['imgsrc'] . '"alt="A picture with a phone advertising jobs for new business exectuives">';
+                    echo '<div class="news-content">';
+                        echo '<h3 class="h3-news">' . $row['title'] . '</h3>';
+                        echo '<p class="description">' . $row['description'] . '</p>';
+                        echo '<a href="#"><button class="news-read-more-btn" type="button">Read More</button></a>';
+                        echo '<div class="posted-by-section">';
+                            echo '<div>';
+                                echo '<img class="avatar-img" src="' . $row['authorsrc'] . '" alt="An avatar of the user who posted the article.">';
+                            echo '</div>';
+                            echo '<div class="details">';
+                                echo '<strong class="posted-strong">' . $row['author'] . '</strong><br>' . $row['dateposted'];
+                            echo '</div>';
+                        echo '</div>';
+                    echo '</div>';
+                echo '</div>';
+            }
+        }
+    
+    echo '</div>';
+?>
